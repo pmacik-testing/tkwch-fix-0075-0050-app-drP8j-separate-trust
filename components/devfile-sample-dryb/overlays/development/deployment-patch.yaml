@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dryb
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0050-tenant/tkwch-fix-0075-0050-app/devfile-sample-dryb@sha256:e438161ac200d1a69c4731b4d7cdd9d2b14f6a06a44b61ddb655bf83c2caf9df
+        name: my-nodejs
+        resources: {}
+status: {}
